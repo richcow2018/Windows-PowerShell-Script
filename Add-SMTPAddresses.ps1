@@ -94,7 +94,7 @@ Foreach ($Mailbox in $Mailboxes)
 	
         #$NewAddress = "smtp:" + $Mailbox.Alias + "@$Domain"
 		$LowAlias = $Mailbox.PrimarySmtpAddress.ToLower()
-		$RealAlias = $LowAlias.Replace("@asiainspection.com", "@$Domain")
+		$RealAlias = $LowAlias.Replace("@abc.com", "@$Domain")
 		$NewAddress = "smtp:" + $RealAlias
 		#$NewAddress = $Mailbox.Alias + "@$Domain"
     }
